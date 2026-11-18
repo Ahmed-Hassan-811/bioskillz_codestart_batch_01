@@ -4,7 +4,7 @@
  Task 01: Variables, Data Types, Input, Operators & Typecasting
 ==============================================================
 
- Name     : ____________________
+ Name     : Ahmed Hassan
 
  Save as  : yourname_task_01.py   (example: ali_task_01.py)
  Deadline : Friday, 20 November 2026, 9:00 PM (PKT)
@@ -40,24 +40,44 @@
 # --------------------------------------------------------------
 
 # Your code here
+print(7 / 2)  # 3.5
 
+print(7 // 2)  # 3
 
+print("7" + "2")  # 72
+
+print(type(7.0))  # float
+
+print(2 + 3 * 4 ** 2)  #  50
+
+print(bool("0"))  #  true
 
 # --------------------------------------------------------------
 # Exercise 2
 # --------------------------------------------------------------
 
 # Your code here
+name = input("Name: ")
+print("Hello", name)
 
+age = int(input("Age: "))
+print("Next year", age  + 1)
 
+print("Done")
 
 # --------------------------------------------------------------
 # Exercise 3
 # --------------------------------------------------------------
 
 # Your code here
+total_bill = int(input("Total Bill: "))
+no_of_friends = int(input("Number of friends: "))
 
+Each_person_pays = int(total_bill // no_of_friends)
+print("Each_person_pays: ",  Each_person_pays)
 
+left = total_bill % no_of_friends
+print("left over: ", left)
 
 # ==============================================================
 # PART B: TASKS
@@ -83,8 +103,17 @@
 # --------------------------------------------------------------
 
 # Your code here
+'''
+If the code runs line-by-line than there is no need to reasign name and age variables.
+'''
 
+height = 1.75
+is_student = True
 
+print(name, type(name))
+print(age, type(age))
+print(height, type(height))
+print(is_student, type(is_student))
 
 # --------------------------------------------------------------
 # Task 2: Temperature Converter (Input and Typecasting)
@@ -103,8 +132,13 @@
 # --------------------------------------------------------------
 
 # Your code here
+Celsius = int(input("Enter temperature in Celsius: "))
 
+Fahrenheit = (Celsius * 9 / 5) + 32
+Kelvin = Celsius + 273.15
 
+print("Fahrenheit: ", Fahrenheit)
+print("Kelvin: ", Kelvin)
 
 # --------------------------------------------------------------
 # Task 3: Simple Calculator (Arithmetic Operators)
@@ -127,8 +161,29 @@
 # --------------------------------------------------------------
 
 # Your code here
+first_number = int(input("Enter first number: "))
+second_number = int(input("Enter second number: "))
 
+addition = first_number + second_number
+print("Addition: ", addition)
 
+subtraction = first_number - second_number
+print("Subtraction: ", subtraction)
+
+multiplication = first_number * second_number
+print("Multiplication: ", multiplication)
+
+division = first_number / second_number
+print("Division: ", division)
+
+floor_division = first_number // second_number
+print("Floor division: ", floor_division)
+
+modulus = first_number % second_number
+print("Modulus: ", modulus)
+
+power = first_number ** second_number
+print("Power: ", power)
 
 # --------------------------------------------------------------
 # Task 4: Savings Tracker (Assignment Operators)
@@ -148,8 +203,17 @@
 # --------------------------------------------------------------
 
 # Your code here
+savings = 1000
+print("Starting savings: ", savings)
 
+savings += 500
+print("After gift: ", savings)
 
+savings -= 300
+print("After buying books: ", savings)
+
+savings *= 2
+print("After doubling: ", savings)
 
 # --------------------------------------------------------------
 # Task 5: Scholarship Check (Comparison and Logical Operators)
@@ -172,9 +236,12 @@
 # --------------------------------------------------------------
 
 # Your code here
+marks = int(input("Enter your marks: "))
+attendance = int(input("Enter your attendance percentage: "))
 
-
-
+print("Marks 80 or more: ", marks >= 80)
+print("Attendance 75% or more: ", attendance >= 75)
+print("Qualifies for scholarship: ", marks >= 80 and attendance >= 75)
 # ==============================================================
 # Before you submit, check that:
 #   [ ] Your name is written at the top of this file
