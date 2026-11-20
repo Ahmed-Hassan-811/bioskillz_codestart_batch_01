@@ -58,9 +58,9 @@ print(bool("0"))  #  true
 
 # Your code here
 name = input("Name: ")
-print("Hello", name)
-
 age = int(input("Age: "))
+
+print("Hello", name)
 print("Next year", age  + 1)
 
 print("Done")
@@ -103,12 +103,12 @@ print("left over: ", left)
 # --------------------------------------------------------------
 
 # Your code here
-'''
-If the code runs line-by-line than there is no need to reasign name and age variables.
-'''
-
+name = input("Name: ")
+age = int(input("Age: "))
 height = 1.75
 is_student = True
+
+# type() used for see the type of variables we set of ask user to store.
 
 print(name, type(name))
 print(age, type(age))
@@ -132,7 +132,7 @@ print(is_student, type(is_student))
 # --------------------------------------------------------------
 
 # Your code here
-Celsius = int(input("Enter temperature in Celsius: "))
+Celsius = float(input("Enter temperature in Celsius: "))
 
 Fahrenheit = (Celsius * 9 / 5) + 32
 Kelvin = Celsius + 273.15
@@ -161,8 +161,8 @@ print("Kelvin: ", Kelvin)
 # --------------------------------------------------------------
 
 # Your code here
-first_number = int(input("Enter first number: "))
-second_number = int(input("Enter second number: "))
+first_number = float(input("Enter first number: "))
+second_number = float(input("Enter second number: "))
 
 addition = first_number + second_number
 print("Addition: ", addition)
@@ -244,8 +244,8 @@ print("Attendance 75% or more: ", attendance >= 75)
 print("Qualifies for scholarship: ", marks >= 80 and attendance >= 75)
 # ==============================================================
 # Before you submit, check that:
-#   [ ] Your name is written at the top of this file
-#   [ ] The file is saved as yourname_task_01.py
-#   [ ] The whole file runs without errors
-#   [ ] Your output matches the examples
+#   [✓] Your name is written at the top of this file
+#   [✓] The file is saved as yourname_task_01.py
+#   [✓] The whole file runs without errors
+#   [✓] Your output matches the examples
 # ==============================================================
