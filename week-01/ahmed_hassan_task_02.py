@@ -4,7 +4,7 @@
  Task 02: Strings & Conditional Statements
 ==============================================================
 
- Name     : ____________________
+ Name     : Ahmed Hassan
 
  Save as  : yourname_task_02.py   (example: ali_task_02.py)
  Deadline : Friday, 20 November 2026, 9:00 PM (PKT)
@@ -43,23 +43,68 @@
 # --------------------------------------------------------------
 
 # Your code here
+print("Python"[1:4])
 
+print("banana" .count("an"))
 
+print("Hello"[-1])
+
+print("Zebra" < "apple")
+
+print(5 > 3 and 2 > 4)
+
+print(not "")
 
 # --------------------------------------------------------------
 # Exercise 2
 # --------------------------------------------------------------
 
 # Your code here
+#marks = int(input("Marks:
+#if marks >= 50
+#            print("Pass")
+#else:
+#print("Fail")
+#
+#answer = input("Again? ")
+#if answer = "yes":
+#           print("Restarting...")
 
+marks = int(input("Marks:"))
+if marks >= 50:
+    print("Pass")
+else:
+    print("Fail")
 
+answer = input("Again?")
+if answer == "yes":
+    print("Restarting...")
 
 # --------------------------------------------------------------
 # Exercise 3
 # --------------------------------------------------------------
 
 # Your code here
+name = input("Name: ")
+print("Student name: ", name.lower())
 
+marks = int(input("Marks: "))
+print("Marks (0-100): ", marks)
+
+if marks >=85:
+        grade = "A"
+elif marks >=70:
+        grade = "B"
+elif marks >=55:
+        grade = "C"
+elif marks >=40:
+        grade = "D"
+else:
+        grade = "F"
+
+print(f"{name} | scored {marks}/100 | Grade {grade}")
+
+# --------------------------------------------------------------
 
 
 # ==============================================================
@@ -86,8 +131,13 @@
 # --------------------------------------------------------------
 
 # Your code here
+name = input("Enter your full name: ")
 
-
+print("Uppercase: ", name.upper())
+print("Lowercase: ", name.lower())
+print("Title case: ", name.title())
+print("Total characters: ", len(name))
+print("Number of 'a': ", name.lower().count("a"))
 
 # --------------------------------------------------------------
 # Task 2: Email Breakdown (Indexing and Slicing)
@@ -114,8 +164,15 @@
 # --------------------------------------------------------------
 
 # Your code here
+email = input("Enter your email: ")
+at_pos = email.find("@")
 
-
+print("First character: ", email[0])
+print("Last character: ", email[-1])
+print("Position of @: ", email.find("@"))
+print("Username: ", email[:email.find("@")])
+print("Domain: ", email[email.find("@") + 1:])
+print("Gmail address: ", email.endswith("gmail.com"))
 
 # --------------------------------------------------------------
 # Task 3: Report Card (f-strings and Typecasting)
@@ -142,8 +199,18 @@
 # --------------------------------------------------------------
 
 # Your code here
+name = input("Enter your name: ")
+subject1 = float(input("Enter marks for Subject 1: "))
+subject2 = float(input("Enter marks for Subject 2: "))
+subject3 = float(input("Enter marks for Subject 3: "))
 
+total = subject1 + subject2 + subject3
+percentage = (total / 300) * 100
 
+print("----- Report Card -----")
+print(f"Name: {name}")
+print(f"Total: {total} out of 300")
+print(f"Percentage: {percentage:.2f}%")
 
 # --------------------------------------------------------------
 # Task 4: Grade Calculator (if, elif and else)
@@ -171,7 +238,20 @@
 # --------------------------------------------------------------
 
 # Your code here
+marks = int(input("Enter your marks: "))
 
+if marks >=85 and marks <= 100:
+    print("Grade: A")
+elif marks >=70 and marks <= 84:
+    print("Grade: B")
+elif marks >=55 and marks <= 69:
+    print("Grade: C")
+elif marks >=40 and marks <= 54:
+    print("Grade: D")
+elif marks >=0 and marks <= 39:
+    print("Grade: F")
+else:
+    print("Invalid marks")
 
 
 # --------------------------------------------------------------
@@ -209,13 +289,23 @@
 # --------------------------------------------------------------
 
 # Your code here
+username = input("Enter username: ")
+username = username.lower()
+username = username.strip()
+password = input("Enter password: ")
 
-
+if username == "codestart":
+  if password == "python123":
+    print("Login successful. Welcome to CodeStart!")
+  else:
+    print("Incorrect password. Please try again.")
+else:
+  print("Username not found.")
 
 # ==============================================================
 # Before you submit, check that:
-#   [ ] Your name is written at the top of this file
-#   [ ] The file is saved as yourname_task_02.py
-#   [ ] The whole file runs without errors
-#   [ ] Your output matches the examples
+#   [✓] Your name is written at the top of this file
+#   [✓] The file is saved as yourname_task_02.py
+#   [✓] The whole file runs without errors
+#   [✓] Your output matches the examples
 # ==============================================================
